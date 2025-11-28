@@ -1,14 +1,19 @@
-import { useState } from 'react'
 import './App.css'
-import BottoneCitta from './components/BottoneCitta.jsx'
 import React from 'react';
-
+import { BrowserRouter, Routes, Route} from 'react-router-dom';
+import Home from './pagine/Home.jsx';
+import DettagliMeteo from './pagine/DettagliMeteo.jsx';
 function App() {
-  <>  
-  <BottoneCitta>Roma</BottoneCitta>
-  <h1>App Meteo</h1>
-    </>
-  
-}
+  <>
+    return (
+      <BrowserRouter>
+        <Routes>
+          <Route path='/' element={<Home />} />
+          <Route path='/dettagli-meteo/:citta' element={<DettagliMeteo />} />
+        </Routes>
+      </BrowserRouter>
+    )
+  </>
 
+}
 export default App

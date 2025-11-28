@@ -17,7 +17,7 @@ try {const datiMeteo = await ottenereMeteoPerCitta(citta)
         }
     }
     catch (error){ console.error("Errore durante il recupero dei dati meteo:", error); alert("inserisci un nome di cittá valido"); }
-}}}
+}}
 return (
     <>
         <div className="home-container">
@@ -27,13 +27,12 @@ return (
             <input type="text"
                 value={citta}
                 onChange={(e) => setCitta(e.target.value)}
-                placeholder="Inserisci una città">
+                placeholder="Inserisci una città"/>
                 <button type="submit">
                     Cerca Meteo
                 </button>
-            </input>
         </form>
         </div>
     </>
-)
+)}
 export default Home 
