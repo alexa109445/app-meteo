@@ -10,7 +10,7 @@ const ottenereMeteoPerCitta = async (citta) => {
 return await risposta.json()} catch (errore) {console.error('errore nella chiamata API', errore)
     return null
     }}
-    export default ottenereMeteoPerCitta
+export {ottenereMeteoPerCitta}
 
 const ottenerePrevisione5Giorni= async (citta) => {
     try {
@@ -23,4 +23,4 @@ const ottenerePrevisione5Giorni= async (citta) => {
         console.error('errore nella chiamata API per la previsione dei 5 giorni', errore)
         return null
     }}
-export default ottenerePrevisione5Giorni
+export {ottenerePrevisione5Giorni}
