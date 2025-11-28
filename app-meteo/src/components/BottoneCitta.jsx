@@ -1,7 +1,11 @@
-import React from "react";
+import { Button } from 'react-bootstrap';
 
 const BottoneCitta = ({ nome, onClick }) => {
-    return (<button className="bottone-citta" onClick={() => onClick(nome)}>{nome}</button>
-    )
-}
-export default BottoneCitta;    
+  return (
+    <Button variant="info" onClick={() => onClick(nome)}>
+      {nome}
+    </Button>
+  );
+};
+
+export default BottoneCitta;

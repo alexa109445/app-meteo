@@ -2,6 +2,7 @@ import './App.css'
 import React from 'react';
 import { BrowserRouter, Routes, Route} from 'react-router-dom';
 import Home from './pagine/Home.jsx';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import DettagliMeteo from './pagine/DettagliMeteo.jsx';
 function App() {
     return (
