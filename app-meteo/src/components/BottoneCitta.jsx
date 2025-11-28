@@ -1,7 +1,7 @@
 import React from "react";
 
-const BottoneCitta = ({ nomeCitta, onClickCittaSelezionata }) => {
-    return (<button onClick={() => onClickCittaSelezionata(nomeCitta)} className="bottone-citta">{nomeCitta}</button>
+const BottoneCitta = ({ nome, onClick }) => {
+    return (<button className="bottone-citta" onClick={() => onClick(nome)}>{nome}</button>
     )
 }
 export default BottoneCitta;    
