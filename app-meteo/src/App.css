@@ -1,44 +1,86 @@
-/* Stile di base */
-body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+body{
+    margin:0;
+    padding:0;
+    font-family:"Arial";
+    background: color #eef2f3;
+    color:#333;
 }
-
-.home-container, .dettagli-meteo {
-  padding: 20px;
-  text-align: center;
+.home-container, 
+.dettagli-meteo{
+    max-width:600px;
+    margin: 0 auto;
+    padding:20px;
 }
+input [
+    type="text"]{
+        padding:12px;
+        font-size:16px;
+        width:100%;
+        margin-bottom:10px;
+        border:1px solid #bbb;
+        border-radius: 1px solid #bbb;
+    }   
 
-input {
-  padding: 10px;
-  font-size: 16px;
-  margin-right: 10px;
-}
+    button{
+        width: 100%;
+        padding:12px;
+        font-size:16px;
+        background-color:#0077ff;
+        color:white;
+        border:none;
+        border-radius:8px;
+        cursor: pointer;
 
-button {
-  padding: 10px 20px;
-  font-size: 16px;
-  cursor: pointer;
-}
+    }
 
-@media (max-width: 600px) {
-  .home-container {
-    padding: 15px;
-  }
+    button:hover{
+        background-color:#005ec4;
+    }
 
-  input {
-    width: 80%;
-  }
+    .bottone-citta{
+        background: #00c46a;
+        margin-top: 8px;
+    }
+    .bottone-citta:hover{
+        background: #26744f;
+    }
 
-  button {
-    width: 60%;
-  }
-}
+    .box-meteo{
+        background: white;
+        padding: 18px;
+        margin-top: 20px;
+        border-radius: 12px;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        text-align: center;
+    }
 
-@media (min-width: 600px) {
-  .home-container {
-    padding: 30px;
-  }
-}
+    .box-meteo h2{
+        margin:0;
+        color:#0077ff
+    }
+    .box-meteo p{
+        margin: 6px 0;
+        font-size:16px;
+    }
+
+    ul{
+        list-style-type: none;
+        padding: 12px;
+        background: white;
+        margin: 8px;
+        border-radius: 10px;
+        box-shadow: 0 2px 6x rgba(0,0,0,0.1);
+    }
+
+    @media (min-width: 768px){
+      button{
+        width: auto;
+        padding: 12px 20px;
+      }
+    .bottone-citta{
+        display: inline-block;
+        margin-right: 10px;
+    }
+    .home-container, .dettagli-meteo{
+       max-width: 700px;
+    }}

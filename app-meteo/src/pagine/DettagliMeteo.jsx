@@ -1,11 +1,12 @@
-import React, { use } from "react";
+import { useState, useEffect } from "react";
 import { useLocation } from "react-router-dom";
 import { ottenerePrevisione5Giorni } from "../servizi/ServizioMeteo.js";
+import VisualizzaMeteo from "../components/VisualizzaMeteo.jsx";
 
 const DettagliMeteo = () => {
     const location = useLocation();
+    const meteoData = location.state.datiMeteo;
     const [previsione, setPrevisione] = useState(null);
-    const meteoData = location.state.meteoData;
     const citta = meteoData.name;
 
 useEffect(() => {

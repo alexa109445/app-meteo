@@ -4,7 +4,6 @@ import { BrowserRouter, Routes, Route} from 'react-router-dom';
 import Home from './pagine/Home.jsx';
 import DettagliMeteo from './pagine/DettagliMeteo.jsx';
 function App() {
-  <>
     return (
       <BrowserRouter>
         <Routes>
@@ -13,7 +12,6 @@ function App() {
         </Routes>
       </BrowserRouter>
     )
-  </>
 
 }
 export default App
